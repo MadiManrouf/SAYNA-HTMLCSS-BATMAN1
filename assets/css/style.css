@@ -46,6 +46,30 @@ body{
     font-weight: 300;
 }
 
+.up-bar {
+    border-top: #BCBBBD 3px solid;
+    position: relative;
+    top: 132px;
+    width: 85%;
+    left: 102px;
+}
+
+.left-bar {
+    border-left: #BCBBBD 3px solid;
+    position: relative;
+    top: 132px;
+    width: 85%;
+    left: 102px;
+}
+
+.right-bar {
+    border-right: #BCBBBD 3px solid;
+    position: relative;
+    top: 132px;
+    width: 85%;
+    left: 102px;
+}
+
 /* Design de la navigation */
 
 nav{
@@ -68,6 +92,10 @@ ul a{
 
 ul a:hover{
     color: var(--yellow-color);
+}
+
+.logo:hover {
+    filter: invert(4%) sepia(100%) saturate(4673%) hue-rotate(0deg) brightness(104%) contrast(102%);
 }
 
 /* Design de la partie en-tête Héro */
@@ -137,13 +165,13 @@ ul a:hover{
     justify-content: space-between;
 }
 
-#batman-cinema .titre, #batman-justice-league .titre {
+#batman-cinema .titre, #batman-justice-league .titre, #nemesis-container .titre, #allies-container .titre {
     text-transform: uppercase;
     font-weight: bold;
     margin: 30px 0;
 }
 
-#batman-cinema .description, #batman-justice-league .description {
+#batman-cinema .description, #batman-justice-league .description, #nemesis-container .description, #allies-container .description {
     margin-bottom: 40px;
     text-align: justify;
     width: 80%;
@@ -155,16 +183,26 @@ ul a:hover{
 
 /* Design de la section Nemesis de Batman */
 
+#nemesis-container {
+    margin-top: 40px;
+}
+
 .nemesis-personnage{
     display: flex;
     justify-content: space-between;
+    margin-top: 40px;
 }
 
 /* Design de la section Allies personnage */
 
+#allies-container {
+    margin-top: 40px;
+}
+
 .allies-personnage{
     display: flex;
     justify-content: space-between;
+    margin-top: 40px;
 }
 
 /* Design de la partie Multimédia */
@@ -182,6 +220,8 @@ ul a:hover{
 #multimedia .slider-content {
     padding: 15px;
     background-color: #C4C4C4;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 #multimedia p {
@@ -189,6 +229,164 @@ ul a:hover{
     font-family: 'rajdhani';
 }
 
-#multimedia .slider-content-note {
+#multimedia .yellow {
     color: var(--yellow-color);
+}
+
+#multimedia button {
+    position: relative;
+    top: 155px;
+    background: none ;
+    border: none;
+}
+
+#multimedia button.right {
+    right: -85%;
+}
+
+/* Design de la partie contact - formulaire */
+
+#contact {
+    background-color: darkslategrey;
+    padding: 70px 0;
+}
+
+#contact .form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+#contact .titre {
+    display: block;
+    margin: 28px 0;
+}
+
+#contact .form input[type="email"], textarea{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 80%;
+    border-bottom: 2px solid rgb(120, 120, 120);
+    background-color: transparent;
+    padding: 10px 0;
+}
+
+#contact .news {
+    margin: 15px 0;
+    border-bottom: 2px solid rgb(120, 120, 120);
+
+}
+
+#contact .icon img {
+    transform: rotate(90deg);
+    width: 20px;
+}
+
+::-webkit-input-placeholder {
+    
+    color: #f8f184;
+    font-size: 15px;
+
+}
+
+:-ms-input-placeholder {
+    
+    color: #f8f184;
+    font-size: 15px;
+}
+
+::-moz-placeholder {
+    
+    color: #f8f184;
+    font-size: 15px;
+
+}
+
+::placeholder {
+    color: #f8f184;
+    font-size: 15px;
+}
+
+.btn-group {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form input[type="radio"]{
+    opacity: 0;
+}
+
+.btn-group label {
+    cursor: pointer;
+    border: 2px solid;
+    padding: 10px;
+    border-image: linear-gradient(
+        69deg, #fff, #19587D
+    ) 1;
+    border-image: linear-gradient(
+        69deg, #fff, #19587D
+    ) 1;
+    font-size: 20px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 230px;
+    margin: 25px auto;
+    padding: 15px 0;
+    cursor: pointer;
+    background: linear-gradient(to right,
+        #eddebf67,
+        #89000993
+    );
+}
+
+/* Design de la partie citation */
+
+#citation {
+    margin: 90px;
+}
+
+#citation .citation-carte {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#citation .citation-auteur {
+    font-size: 10px;
+    padding-top: 30px;
+    font-family: 'rajdhani';
+}
+
+#citation .guillemet-close {
+    float: right;
+}
+
+/* Design du Footer */
+
+footer {
+    margin-top: 162px;
+}
+
+footer .text-footer {
+    text-align: center;
+    font-size: 14px;
+}
+
+footer .social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+
+footer .social-item {
+    padding: 15px;
 }

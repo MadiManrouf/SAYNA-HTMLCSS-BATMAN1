@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <div class="up-bar"></div>
+    <div class="left-bar"></div>
+    <div class="right-bar"></div>
     <header>
         <nav class="container">
             <a href="index.html">
-                <img src="/assets/Logos/logohome.png" alt="logo">
+                <img class="logo" src="/assets/Logos/logohome.png" alt="logo">
             </a>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -80,8 +83,8 @@
 <!------------------------------------------La troisième section Némésis---------------------------------->
         <section id="nemesis-container">
             <div class="container">
-                <h1>NÉMÉSIS</h1>
-                <p>Batman souhaite éradiquer la criminalité de Gotham. C’est pourquoi, il affrontera la plupart
+                <h1 class="titre">NÉMÉSIS</h1>
+                <p class="description">Batman souhaite éradiquer la criminalité de Gotham. C’est pourquoi, il affrontera la plupart
                     du temps, des vilains sans capacités surnaturelles mais particulièrement violents ou
                     psychopathes. Avec son introduction dans la Justice League il aura l’occasion de se mesurer à
                     des antagonistes qui défient l’imagination et les lois de la physique. Parmi les derniers
@@ -112,10 +115,10 @@
             </div>
         </section>
 <!-----------------------------------------La quatrième section Alliés------------------------------------->
-        <section class="allies-container">
+        <section id="allies-container">
             <div class="container">
-                <h1>ALLIES</h1>
-                <p>Alfred est le majordome des Wayne. A leur mort il s’occupe de l’éducation du jeune Bruce
+                <h1 class="titre">ALLIES</h1>
+                <p class="description">Alfred est le majordome des Wayne. A leur mort il s’occupe de l’éducation du jeune Bruce
                     avant de l’assister dans son rôle du Batman. Ce dernier rencontrera Catwoman dès le
                     premier numéro des aventures de l’homme chauve-souris en 1940. Tantôt ennemie tantôt
                     alliée la jeune femme fatale fera tourner la tête de Batman à maintes reprises. Du côté de la
@@ -176,7 +179,7 @@
                     <div class="slider-content">
                         <h2>ACTION, Adventure</h2>
                         <h3>Batman Begins</h3>
-                        <p>IMDB: <span class="slider-content-note">8.2</span></p>
+                        <p>IMDB: <span class="yellow">8.2</span></p>
                         <p>Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément
                             traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de
                             guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. De retour chez lui à
@@ -191,72 +194,78 @@
             </div>
         </section>
 <!------------------------------------------Section formulaire--------------------------------------------->
-        <section>
-            <div>
+        <section id="contact">
+            <div class="form">
                 <h2>PRENONS CONTACT</h2>
                 <form action="">
-                    <label for="email">ADRESSE EMAIL</label>
-                    <input type="email" name="email" placeholder="email">
-                    <label for="newsletter">NEWSLETTER</label> <br>
+                    <label class="titre" for="email">ADRESSE EMAIL</label>
+                    <input type="email" name="email" placeholder="Mon email">
+                    <label class="titre" for="newsletter">NEWSLETTER</label> <br>
                     <label for="">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de
                         Batman :
                     </label> <br>
                     <input type="checkbox" name="newsletter">
-                    <br>
                     <div>
                         <span>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</span>
-                        <span>
+                        <span class="icon">
                             <img src="./assets/Logos/icon_flèche_2.png" alt="">
                         </span>
                     </div>  
                     <div>
-                        <p>Souhaitez-vous recevoir des news</p>
+                        <p class="news">Souhaitez-vous recevoir des news</p>
                     </div>
-                    <a href="">Des films</a>
-                    <a href="">Des comics</a>
-                    <a href="">De tout</a> 
-                    <p>MESSAGE</p>
+                    <div class="btn-group">
+                        <input type="radio" id="film">
+                        <label for="film">Des film</label>
+                        <input type="radio" id="comics">
+                        <label for="comics">Des comics</label>
+                        <input type="radio" id="tout">
+                        <label for="tout">De tout</label>
+                    </div>
+                    <p class="titre">MESSAGE</p>
                     <textarea name="" id="" cols="30" placeholder="Laissez un commentaire pour la communauté"></textarea>
                     <input type="submit" value="CONFIRMER">                 
                 </form>
             </div>
         </section>
 <!---------------------------------------Section citation---------------------------------------------------->
-        <section>
-            <div>
-                <div>
+        <section id="citation">
+            <div class="container">
+                <div class="guillemet-open">
                     <img src="./assets/Logos/icon_guillemets_1.png" alt="">
                 </div>
-                <div>
+                <div class="citation-carte">
                     <div>
-                        <p> La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles.</p>
+                        <p class="citation-texte"> La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles.</p>
                     </div>
-                    <div>
+                    <div class="citation-auteur">
                         The Dark Knight : Le Chevalier Noir - Le Joker à Batman (2008)
                     </div>
-                    <div>
-                        <img src="./assets/Logos/icon_guillemets_2.png" alt="">
-                    </div>
+                    
+                </div>
+                <div class="guillemet-close">
+                    <img src="./assets/Logos/icon_guillemets_2.png" alt="">
                 </div>
             </div>
         </section>
     </main>
+    <div class="clearfix"></div>
     <footer>
-            <div>
-                <div>
+            <div class="container">
+                <div class="text-footer">
                     <img src="./assets/Logos/icon_WB.png" alt="">
-                    <p>Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan &
-                        Snyder & Reeves</p>
+                    <span>Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan &
+                        Snyder & Reeves</span>
                 </div>
-                <div>
-                    <a href="">
+                <div class="social-footer">
+                    <a href="" class="social-item">
                         <img src="./assets/Logos/logo_sayna_white.png" alt="">
                         <img src="./assets/Logos/icon_x.png" alt="">
                         <img src="./assets/Logos/icon_DC.png" alt="">
                     </a>
-                    <a href=""><img src="./assets/Logos/icon_facebook.png" alt=""></a>
-                    <a href=""><img src="./assets/Logos/icon_ig.png" alt=""></a>
-                    <a href=""><img src="./assets/Logos/icon_tw.png" alt=""></a>
+                    <a class="social-item" href=""><img src="./assets/Logos/icon_facebook.png" alt=""></a>
+                    <a class="social-item" href=""><img src="./assets/Logos/icon_ig.png" alt=""></a>
+                    <a class="social-item" href=""><img src="./assets/Logos/icon_tw.png" alt=""></a>
                 </div>
             </div>
     </footer>
