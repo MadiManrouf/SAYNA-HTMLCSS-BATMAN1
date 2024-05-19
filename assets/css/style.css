@@ -154,6 +154,18 @@ ul a:hover{
     margin-top: 15px;
 }
 
+.scroll .social:hover {
+    filter: invert(4%) sepia(100%) saturate(4673%) hue-rotate(0deg) brightness(104%) contrast(102%);
+}
+
+.scroll .top:hover{
+    filter: invert(4%) sepia(100%) saturate(4673%) hue-rotate(0deg) brightness(104%) contrast(102%);
+}
+
+.scroll .bottom:hover{
+    filter: invert(4%) sepia(100%) saturate(4673%) hue-rotate(0deg) brightness(104%) contrast(102%);
+}
+
 /* Design de la section Batman personnage */
 
 #batman-cinema, #batman-justice-league {
