@@ -406,3 +406,7 @@ footer .social-footer{
 footer .social-item {
     padding: 15px;
 }
+
+footer .social-item:hover {
+    filter: invert(4%) sepia(100%) saturate(4673%) hue-rotate(0deg) brightness(104%) contrast(102%);
+}
