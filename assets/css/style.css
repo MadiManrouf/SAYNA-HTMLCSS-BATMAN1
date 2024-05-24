@@ -193,6 +193,10 @@ ul a:hover{
     text-align: center;
 }
 
+.batman-item:hover {
+    scale: 1.1;
+}
+
 /* Design de la section Nemesis de Batman */
 
 #nemesis-container {
